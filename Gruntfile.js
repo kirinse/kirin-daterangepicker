@@ -84,8 +84,8 @@ module.exports = function(grunt) {
 				},
 				build: {
 					files:  {},
-					src:    'aterangepicker.js',
-					dest:   'aterangepicker.min.js'
+					src:    'daterangepicker.js',
+					dest:   'daterangepicker.min.js'
 				}
 			},
 			less: {
@@ -94,14 +94,14 @@ module.exports = function(grunt) {
 					},
 					files: {
 						"main.css": "_base.less",
-						"aterangepicker.css": "_aterangepicker.less"
+						"daterangepicker.css": "_daterangepicker.less"
 					}
 				}
 			},
 			cssmin: {
 				dev: {
-					src: ['aterangepicker.css'],
-					dest: 'aterangepicker.min.css'
+					src: ['daterangepicker.css'],
+					dest: 'daterangepicker.min.css'
 				}
 			}/*,
 			karma: {

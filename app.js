@@ -7,7 +7,7 @@
 
 angular.module('myApp', [
 'ngRoute', 'ngSanitize', 'ngTouch', 'ngAnimate',		//additional angular modules
-'kirinse@gmail.com.kirin-daterangepicker'
+'kirin-daterangepicker'
 ]).
 config(['$routeProvider', '$locationProvider', '$compileProvider', function($routeProvider, $locationProvider, $compileProvider) {
 	/**
@@ -19,7 +19,7 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	// var staticPath ='/';
 	var staticPath;
 	// staticPath ='/angular-directives/kirin-daterangepicker/';		//local
-	staticPath ='/';		//nodejs (local)
+	staticPath ='./';		//nodejs (local)
 	// staticPath ='/kirin-daterangepicker/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
