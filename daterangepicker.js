@@ -1,7 +1,7 @@
 (function() {
   var picker;
 
-  picker = angular.module('kirin-daterangepicker', []);
+  picker = angular.module('kirin-daterangepicker', ['ui.bootstrap.position']);
 
   picker.value('dateRangePickerConfig', {
     separator: ' - ',
@@ -12,11 +12,13 @@
     return {
       require: 'ngModel',
       restrict: 'A',
+			replace: true,
       scope: {
         dateMin: '=min',
         dateMax: '=max',
         opts: '=options'
       },
+      templateUrl: 'daterangepicker.html',
       link: function($scope, element, attrs, modelCtrl) {
         var customOpts, el, opts, _formatted, _init, _picker, _validateMax, _validateMin;
         el = element;
